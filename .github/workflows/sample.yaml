@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: execute echo command
-        run: echo ${GITHUB_SHA} | cut -c1-8
+        run: echo ${GITHUB_SHA::7}
