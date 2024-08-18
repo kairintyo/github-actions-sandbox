@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: execute echo command
-        run: echo ${{ github.sha | cut -c1-7 }}
+        run: echo ${{ github.sha.substring(0, 7) }}
